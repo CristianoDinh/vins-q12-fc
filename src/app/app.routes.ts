@@ -3,8 +3,16 @@ import {HomeComponent} from './components/home/home.component';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'en',
     component: HomeComponent,
     title: 'Home Page'
   },
+  {
+    path: '',
+    redirectTo: '/en',
+    pathMatch: 'full',
+  },
+  { path: '**',
+    redirectTo: '/en'
+  }
 ];
