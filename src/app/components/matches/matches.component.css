@@ -1,0 +1,7 @@
+.clip-trapezoid {
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.clip-box {
+  clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+}
