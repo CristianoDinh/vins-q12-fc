@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import {BannerComponent} from '../banner/banner.component';
 import {MatchesComponent} from '../matches/matches.component';
 import {NewsComponent} from '../news/news.component';
-import {LinesUpComponent} from '../lines-up/lines-up.component';
+import {LineUpComponent} from '../line-up/line-up.component';
+
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ import {LinesUpComponent} from '../lines-up/lines-up.component';
     BannerComponent,
     MatchesComponent,
     NewsComponent,
-    LinesUpComponent
+    LineUpComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
