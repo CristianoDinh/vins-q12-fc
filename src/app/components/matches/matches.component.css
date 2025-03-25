@@ -5,3 +5,44 @@
 .clip-box {
   clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
 }
+
+
+/* Chỉnh full background */
+@media (min-width: 1920px) {
+  .matches-background {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Giới hạn chiều rộng tối đa */
+  .matches {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Căn chỉnh dòng "VS" */
+  .row-2 {
+    width: 66%; /* 4/6 */
+    font-size: 2rem;
+  }
+
+  /* Kích thước chữ lớn hơn */
+  .row-2 span {
+    font-size: 4rem; /* VS lớn hơn */
+    padding: 2rem;
+  }
+
+  /* Box thời gian lớn hơn */
+  .timer {
+    gap: 2rem;
+  }
+
+  .timer .number {
+    font-size: 3rem;
+  }
+
+  .timer .text {
+    font-size: 1.5rem;
+  }
+}
