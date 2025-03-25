@@ -22,11 +22,11 @@ export class HeaderComponent implements AfterViewInit {
           headerEl.classList.remove('absolute')
           headerEl.classList.add('sticky');
           headerEl.classList.remove('bg-transparent');
-          headerEl.classList.add('bg-indigo-900');
+          headerEl.classList.add('bg-blue-900');
         } else {
           headerEl.classList.remove('sticky')
           headerEl.classList.add('absolute');
-          headerEl.classList.remove('bg-indigo-900');
+          headerEl.classList.remove('bg-blue-900');
           headerEl.classList.add('bg-transparent');
         }
       }
