@@ -1,13 +1,9 @@
 import { Routes } from '@angular/router';
 import {HomeComponent} from './components/home/home.component';
 import {TestComponent} from './components/test/test.component';
+import {TeamComponent} from './components/team/team.component';
 
 export const routes: Routes = [
-  {
-    path: 'test',
-    component: TestComponent,
-    title: 'Test Component'
-  },
   {
     path: 'en',
     component: HomeComponent,
@@ -18,6 +14,21 @@ export const routes: Routes = [
     redirectTo: '/en',
     pathMatch: 'full',
   },
+
+  {
+    path: 'test',
+    component: TestComponent,
+    title: 'Test Component'
+  },
+  { path: 'team',
+    component: TeamComponent,
+    title: 'Squad | Vins-Q12 FC'
+  },
+  { path: 'team',
+    redirectTo: '/team?scope=1',
+    pathMatch: 'full'
+  },
+
   { path: '**',
     redirectTo: '/en'
   },

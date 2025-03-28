@@ -1,0 +1,45 @@
+<div class="w-full min-h-screen bg-gray-100 ">
+  <!-- Header -->
+  <div class="h-40 pl-18 bg-[#1722BD] text-white">
+    <p class="pt-3 pb-12">
+      <a href="/" class="hover:text-yellow-300">Home</a> > Squad
+    </p>
+    <h1 class="text-5xl font-serif scale-y-120">
+      {{ scope === '1' ? 'MAIN TEAM' : 'COACHING STAFF' }}
+    </h1>
+  </div>
+
+  <!-- Navigation -->
+  <div class="flex justify-center space-x-4 my-4">
+    <button
+      (click)="changeScope('1')"
+      class="px-4 py-2"
+      [class.text-red-600]="scope === '1'"
+      [class.border-b-2]="scope === '1'"
+      [class.border-red-600]="scope === '1'"
+    >
+      VINS Q12
+    </button>
+    <button
+      (click)="changeScope('2')"
+      class="px-4 py-2"
+      [class.text-red-600]="scope === '2'"
+      [class.border-b-2]="scope === '2'"
+      [class.border-red-600]="scope === '2'"
+    >
+      COACHING STAFF
+    </button>
+  </div>
+
+  <!-- Hiển thị nội dung dựa vào scope -->
+  <div class="p-4">
+    <div *ngIf="scope === '1'" class="">
+      <app-player-card></app-player-card>
+    </div>
+
+    <div *ngIf="scope === '2'" class="">
+      <app-coach-card></app-coach-card>
+    </div>
+  </div>
+</div>
+

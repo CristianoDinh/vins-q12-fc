@@ -1,0 +1,109 @@
+<div class="goalkeeper bg-gray-50 pb-5">
+  <span class="title text-gray-900 font-mono text-lg md:text-5xl tracking-wide">GOALKEEPER</span>
+  <div class="grid grid-cols-12 gap-4 md:gap-8 ">
+<!--  player list -->
+    <ng-container *ngFor="let player of playerList">
+      <div *ngIf="player.position === 'Goalkeeper'" class="item col-span-6 md:col-span-3">
+        <a href="/details">
+          <div class="relative pt-12 pr-14 overflow-hidden group">
+            <div class="relative overflow-hidden bg-white aspect-[3/4] rounded-t-xl ">
+              <span class="absolute top-0 left-0 w-0 h-full
+                    bg-yellow-400 rounded-lg transition-all duration-500 group-hover:w-3/4"></span>
+              <p class="z-10 absolute top-0 left-0 -mt-6 md:-mt-10 text-start p-5 font-sans text-gray-400 text-[3rem] md:text-[5rem] tracking-wider ease-in-out duration-500 group-hover:text-red-600">{{ player.id }}</p>
+            </div>
+            <div class="absolute right-0 -bottom-2 z-10 rounded-xl overflow-hidden h-full w-[calc(100%-24px)] hover:scale-110">
+              <img [src]="player.imgUrl" alt="img lazy" class="transition-opacity duration-500 ease-in-out scale-x-130 h-90" />
+            </div>
+          </div>
+          <div class="flex mt-3 md:mt-5 gap-0.5">
+            <span class="text-gray-900 text-start text-xs md:text-xl font-semibold leading-normal">{{ player.name }}</span>
+          </div>
+        </a>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<div class="defender bg-gray-100 py-5">
+  <span class="title text-gray-900 font-mono text-lg md:text-5xl tracking-wide">DEFENDER</span>
+  <div class="grid grid-cols-12 gap-4 md:gap-8 ">
+    <!--  player list -->
+    <ng-container *ngFor="let player of playerList">
+      <div *ngIf="player.position === 'Defender'" class="item col-span-6 md:col-span-3">
+        <a href="/details">
+          <div class="relative pt-12 pr-14 overflow-hidden group">
+            <div class="relative overflow-hidden bg-white aspect-[3/4] rounded-t-xl">
+              <span class="absolute top-0 left-0 w-0 h-full
+                    bg-yellow-400 rounded-lg transition-all duration-500 group-hover:w-3/4"></span>
+              <p class="z-10 absolute top-0 left-0 -mt-6 md:-mt-10 text-start p-5 font-sans text-gray-400 text-[3rem] md:text-[5rem] tracking-wider ease-in-out duration-500 group-hover:text-red-600">{{ player.id }}</p>
+            </div>
+            <div class="absolute right-0 -bottom-2 z-10 rounded-xl overflow-hidden h-full w-[calc(100%-24px)]">
+              <img [src]="player.imgUrl" alt="img lazy" class="transition-opacity duration-500 ease-in-out scale-x-130 h-90" />
+            </div>
+          </div>
+          <div class="flex mt-3 md:mt-5 gap-0.5">
+            <span class="text-gray-900 text-start text-xs md:text-xl font-semibold leading-normal">{{ player.name }}</span>
+          </div>
+        </a>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<div class="midfielder bg-gray-50 py-5 ">
+  <span class="title text-gray-900 font-mono text-lg md:text-5xl tracking-wide">MIDFIELDER</span>
+  <div class="grid grid-cols-12 gap-4 md:gap-8 ">
+    <!--  player list -->
+    <ng-container *ngFor="let player of playerList">
+      <div *ngIf="player.position === 'Midfielder'" class="item col-span-6 md:col-span-3">
+        <a href="/details">
+          <div class="relative pt-12 pr-14 overflow-hidden group">
+            <div class="relative overflow-hidden bg-white aspect-[3/4] rounded-t-xl">
+              <span class="absolute top-0 left-0 w-0 h-full
+                    bg-yellow-400 rounded-lg transition-all duration-500 group-hover:w-3/4"></span>
+              <p class="z-10 absolute top-0 left-0 -mt-6 md:-mt-10 text-start p-5 font-sans text-gray-400 text-[3rem] md:text-[5rem] tracking-wider ease-in-out duration-500 group-hover:text-red-600">{{ player.id }}</p>
+            </div>
+            <div class="absolute right-0 -bottom-2 z-10 rounded-xl overflow-hidden h-full w-[calc(100%-24px)]">
+              <img [src]="player.imgUrl" alt="img lazy" class="transition-opacity duration-500 ease-in-out scale-x-130 h-90" />
+            </div>
+          </div>
+          <div class="flex mt-3 md:mt-5 gap-0.5">
+            <span class="text-gray-900 text-start text-xs md:text-xl font-semibold leading-normal">{{ player.name }}</span>
+          </div>
+        </a>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<div class="forward bg-gray-100 py-5  ">
+  <span class="title text-gray-900 font-mono text-lg md:text-5xl tracking-wide">FORWARD</span>
+  <div class="grid grid-cols-12 gap-4 md:gap-8 ">
+    <!--  player list -->
+    <ng-container *ngFor="let player of playerList">
+      <div *ngIf="player.position === 'Forward'" class="item col-span-6 md:col-span-3">
+        <a href="/details">
+          <div class="relative pt-12 pr-14 overflow-hidden group">
+            <div class="relative overflow-hidden bg-white aspect-[3/4] rounded-t-xl">
+              <span class="absolute top-0 left-0 w-0 h-full
+                    bg-yellow-400 rounded-lg transition-all duration-500 group-hover:w-3/4"></span>
+              <p class="z-10 absolute top-0 left-0 -mt-6 md:-mt-10 text-start p-5 font-sans text-gray-400 text-[3rem] md:text-[5rem] tracking-wider ease-in-out duration-500 group-hover:text-red-600">{{ player.id }}</p>
+            </div>
+            <div class="absolute right-0 -bottom-2 z-10 rounded-xl overflow-hidden h-full w-[calc(100%-24px)]">
+              <img [src]="player.imgUrl" alt="img lazy" class="transition-opacity duration-500 ease-in-out scale-x-130 h-90" />
+            </div>
+          </div>
+          <div class="flex mt-3 md:mt-5 gap-0.5">
+            <span class="text-gray-900 text-start text-xs md:text-xl font-semibold leading-normal">{{ player.name }}</span>
+          </div>
+        </a>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+
+
+
+
+
