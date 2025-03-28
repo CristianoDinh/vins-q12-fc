@@ -9,7 +9,6 @@ import {CoachService} from '../../../services/coach.service';
   selector: 'app-coach-card',
   imports: [
     NgForOf,
-    NgIf
   ],
   templateUrl: './coach-card.component.html',
   styleUrl: './coach-card.component.css'
