@@ -4,7 +4,7 @@ import {TestComponent} from './components/test/test.component';
 
 export const routes: Routes = [
   {
-    path: 'slide',
+    path: 'test',
     component: TestComponent,
     title: 'Test Component'
   },

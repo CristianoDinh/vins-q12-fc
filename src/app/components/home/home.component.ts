@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 import {BannerComponent} from '../banner/banner.component';
 import {MatchesComponent} from '../matches/matches.component';
 import {NewsComponent} from '../news/news.component';
-import {LineUpComponent} from '../line-up/line-up.component';
+import {LineupComponent} from '../lineup-v1.2.0/lineup-v1.2.0.component';
 import {SponsorComponent} from '../sponsor/sponsor.component';
-import {TestComponent} from '../test/test.component';
-
 
 @Component({
   selector: 'app-home',
@@ -13,9 +11,8 @@ import {TestComponent} from '../test/test.component';
     BannerComponent,
     MatchesComponent,
     NewsComponent,
-    LineUpComponent,
+    LineupComponent,
     SponsorComponent,
-    TestComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
