@@ -1,0 +1,50 @@
+.container-fluid {
+  background-image: url('../../../../public/background-matches-3.jpg')
+}
+
+/*.lineup-wrap{*/
+/*  position: relative;*/
+/*  overflow: hidden;*/
+/*  height: 150px;*/
+/*}*/
+
+/*.slider-main {*/
+/*  position : absolute;*/
+/*  width : 200%;*/
+/*}*/
+
+/*.lineup-item {*/
+/*  display: inline-block;*/
+/*  position: relative;*/
+/*  width: 300px;*/
+/*  height: 150px;*/
+/*  background: rgb(151, 2, 2);*/
+/*  margin: 0 12px;*/
+/*}*/
+
+/*.item-image {*/
+/*  position: absolute;*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%);*/
+
+/*}*/
+
+/*.item-text {*/
+/*  position: absolute;*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%);*/
+/*  font-size: 32px;*/
+/*  font-weight: bolder;*/
+/*  color: yellow;*/
+/*}*/
+
+/*button */
+/*.next {*/
+/*  background: yellow;*/
+/*  position: absolute;*/
+/*  right: -14px;*/
+/*  top: 50%;*/
+/*  transform: translate(-50%, -50%);*/
+/*}*/
