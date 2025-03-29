@@ -3,7 +3,7 @@
   <div class="grid grid-cols-12 gap-4 md:gap-8 ">
 <!--  player list -->
     <ng-container *ngFor="let player of playerList">
-      <div *ngIf="player.position === 'Goalkeeper'" class="item col-span-6 md:col-span-3">
+      <div *ngIf="player.position === 'Goalkeeper' || player.position === 'Goalkeeper1'" class="item col-span-6 md:col-span-3">
         <a href="/details">
           <div class="relative pt-12 pr-14 overflow-hidden group">
             <div class="relative overflow-hidden bg-white aspect-[3/4] rounded-t-xl ">
@@ -29,8 +29,8 @@
   <div class="grid grid-cols-12 gap-4 md:gap-8 ">
     <!--  player list -->
     <ng-container *ngFor="let player of playerList">
-      <div *ngIf="player.position === 'Defender'" class="item col-span-6 md:col-span-3">
-        <a href="/details">
+      <div *ngIf="player.position === 'Defender' || player.position === 'Defender1'" class="item col-span-6 md:col-span-3">
+      <a href="/details">
           <div class="relative pt-12 pr-14 overflow-hidden group">
             <div class="relative overflow-hidden bg-white aspect-[3/4] rounded-t-xl">
               <span class="absolute top-0 left-0 w-0 h-full
@@ -55,7 +55,7 @@
   <div class="grid grid-cols-12 gap-4 md:gap-8 ">
     <!--  player list -->
     <ng-container *ngFor="let player of playerList">
-      <div *ngIf="player.position === 'Midfielder'" class="item col-span-6 md:col-span-3">
+      <div *ngIf="player.position === 'Midfielder' || player.position === 'Midfielder1'" class="item col-span-6 md:col-span-3">
         <a href="/details">
           <div class="relative pt-12 pr-14 overflow-hidden group">
             <div class="relative overflow-hidden bg-white aspect-[3/4] rounded-t-xl">
@@ -81,7 +81,7 @@
   <div class="grid grid-cols-12 gap-4 md:gap-8 ">
     <!--  player list -->
     <ng-container *ngFor="let player of playerList">
-      <div *ngIf="player.position === 'Forward'" class="item col-span-6 md:col-span-3">
+      <div *ngIf="player.position === 'Forward' || player.position === 'Forward1'" class="item col-span-6 md:col-span-3">
         <a href="/details">
           <div class="relative pt-12 pr-14 overflow-hidden group">
             <div class="relative overflow-hidden bg-white aspect-[3/4] rounded-t-xl">
