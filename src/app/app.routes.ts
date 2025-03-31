@@ -7,6 +7,7 @@ import {NewsDetailComponent} from './components/news/news-detail.component';
 import {StoreComponent} from './components/store/store.component';
 import {ComingSoonComponent} from './components/coming-soon/coming-soon.component';
 import {ChatGPTComponent} from './components/chat-gpt/chat-gpt.component';
+import {ContactUsComponent} from './components/footer/contact-us/contact-us.component';
 
 export const routes: Routes = [
   {
@@ -60,7 +61,7 @@ export const routes: Routes = [
       },
       {
         path: 'contact-us',
-        component: ComingSoonComponent,
+        component: ContactUsComponent,
         title: 'Contact Us'
       },
       {
