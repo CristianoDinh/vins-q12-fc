@@ -4,42 +4,88 @@ import {TestComponent} from './components/test/test.component';
 import {TeamComponent} from './components/team/team.component';
 import {NewsAllComponent} from './components/news/news-all/news-all.component';
 import {NewsDetailComponent} from './components/news/news-detail.component';
+import {StoreComponent} from './components/store/store.component';
+import {ComingSoonComponent} from './components/coming-soon/coming-soon.component';
+import {ChatGPTComponent} from './components/chat-gpt/chat-gpt.component';
 
 export const routes: Routes = [
-  {
-    path: 'en',
-    component: HomeComponent,
-    title: 'Vins Q12 FC'
-  },
-  {
-    path: '',
-    redirectTo: '/en',
-    pathMatch: 'full',
-  },
   {
     path: 'test',
     component: TestComponent,
     title: 'Test Component'
   },
-  { path: 'team',
-    component: TeamComponent,
-    title: 'Squad | Vins-Q12 FC'
-  },
-  { path: 'team',
-    redirectTo: '/team?scope=1',
-    pathMatch: 'full'
+  {
+    path: 'chatgpt',
+    component: ChatGPTComponent,
+    title: 'ChatGPT'
   },
 
-  { path: 'news',
-    component: NewsDetailComponent,
-    title: 'News | Vins-Q12 FC'
-  },
-  { path: 'news',
-    redirectTo: '/news?scope=0',
-    pathMatch: 'full'
-  },
+  // Offical
+  {
+    path: ':en',
+    children: [
+      {
+        path: '',
+        component: HomeComponent,
+        title: 'Vins Q12 FC'
+      },
+      { path: 'team',
+        component: TeamComponent,
+        title: 'Squad | Vins-Q12 FC'
+      },
 
-  { path: '**',
-    redirectTo: '/en'
+      { path: 'news',
+        component: NewsDetailComponent,
+        title: 'News | Vins-Q12 FC'
+      },
+      { path: 'news',
+        redirectTo: '/news?scope=0',
+        pathMatch: 'full'
+      },
+      {
+        path: 'store',
+        component: ComingSoonComponent,
+        title: 'Store | Vins-Q12 FC'
+      },
+      {
+        path: 'matches',
+        component: ComingSoonComponent,
+        title: 'Matches | Vins-Q12 FC'
+      },
+      // III. Footer - Policy
+      {
+        path: 'accessibility',
+        component: ComingSoonComponent,
+        title: 'Accessibility'
+      },
+      {
+        path: 'contact-us',
+        component: ComingSoonComponent,
+        title: 'Contact Us'
+      },
+      {
+        path: 'policy',
+        component: ComingSoonComponent,
+        title: 'Privacy Policy'
+      },
+      {
+        path: 'terms-of-use',
+        component: ComingSoonComponent,
+        title: 'Terms of Use'
+      },
+      {
+        path: 'cookie-policy',
+        component: ComingSoonComponent,
+        title: 'Cookie Policy'
+      },
+      { path: '**',
+        redirectTo: ':en',
+        pathMatch: 'full'
+      },
+    ]
+  },
+  { path: '',
+    redirectTo: '/en',
+    pathMatch: 'full'
   },
 ];

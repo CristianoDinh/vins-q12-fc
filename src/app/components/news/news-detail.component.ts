@@ -26,7 +26,7 @@ export class NewsDetailComponent implements OnInit {
   }
 
   changeScope(newScope: string) {
-    this.router.navigate(['/news'], { queryParams: { scope: newScope } });
+    this.router.navigate(['/en/news'], { queryParams: { scope: newScope } });
   }
 
 }

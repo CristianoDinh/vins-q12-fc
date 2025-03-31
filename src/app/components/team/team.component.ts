@@ -25,7 +25,7 @@ export class TeamComponent implements OnInit {
   }
 
   changeScope(newScope: string) {
-    this.router.navigate(['/team'], { queryParams: { scope: newScope } });
+    this.router.navigate(['/en/team'], { queryParams: { scope: newScope } });
   }
 
 }
