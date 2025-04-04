@@ -8,6 +8,8 @@ import {StoreComponent} from './components/store/store.component';
 import {ComingSoonComponent} from './components/coming-soon/coming-soon.component';
 import {ChatGPTComponent} from './components/chat-gpt/chat-gpt.component';
 import {ContactUsComponent} from './components/footer/contact-us/contact-us.component';
+import {AccessibilityComponent} from './components/footer/accessibility/accessibility.component';
+import {PrivacyComponent} from './components/footer/privacy/privacy.component';
 
 export const routes: Routes = [
   {
@@ -56,7 +58,7 @@ export const routes: Routes = [
       // III. Footer - Policy
       {
         path: 'accessibility',
-        component: ComingSoonComponent,
+        component: AccessibilityComponent,
         title: 'Accessibility'
       },
       {
@@ -66,7 +68,7 @@ export const routes: Routes = [
       },
       {
         path: 'policy',
-        component: ComingSoonComponent,
+        component: PrivacyComponent,
         title: 'Privacy Policy'
       },
       {
