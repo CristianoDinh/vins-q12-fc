@@ -10,6 +10,7 @@ import {ChatGPTComponent} from './components/chat-gpt/chat-gpt.component';
 import {ContactUsComponent} from './components/footer/contact-us/contact-us.component';
 import {AccessibilityComponent} from './components/footer/accessibility/accessibility.component';
 import {PrivacyComponent} from './components/footer/privacy/privacy.component';
+import {TermOfUseComponent} from './components/footer/term-of-use/term-of-use.component';
 
 export const routes: Routes = [
   {
@@ -73,7 +74,7 @@ export const routes: Routes = [
       },
       {
         path: 'terms-of-use',
-        component: ComingSoonComponent,
+        component: TermOfUseComponent,
         title: 'Terms of Use'
       },
       {
