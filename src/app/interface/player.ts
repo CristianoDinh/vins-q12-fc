@@ -3,4 +3,5 @@ export interface Player {
   name: string;
   position: string;
   imgUrl: string;
+  celebrationUrl: string;
 }
