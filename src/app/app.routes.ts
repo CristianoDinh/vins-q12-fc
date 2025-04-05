@@ -11,6 +11,7 @@ import {ContactUsComponent} from './components/footer/contact-us/contact-us.comp
 import {AccessibilityComponent} from './components/footer/accessibility/accessibility.component';
 import {PrivacyComponent} from './components/footer/privacy/privacy.component';
 import {TermOfUseComponent} from './components/footer/term-of-use/term-of-use.component';
+import {CookiesComponent} from './components/footer/cookies/cookies.component';
 
 export const routes: Routes = [
   {
@@ -79,7 +80,7 @@ export const routes: Routes = [
       },
       {
         path: 'cookie-policy',
-        component: ComingSoonComponent,
+        component: CookiesComponent,
         title: 'Cookie Policy'
       },
       { path: '**',
