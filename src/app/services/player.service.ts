@@ -9,8 +9,8 @@ export class PlayerService {
 
   protected playerList: Player[] = [
     { id: 1, name: 'Lëv YaBao', position: 'Goalkeeper', imgUrl: 'squad-1-yabao.png' },
-    { id: 7, name: 'Rô Nam Đô', position: 'Midfielder', imgUrl: 'squad-1.png' },
-    { id: 8, name: 'Cùcù re Q`uan', position: 'Defender', imgUrl: 'squad-1.png' },
+    { id: 7, name: 'Rô Nam Đô', position: 'Midfielder', imgUrl: 'squad-unknown.png' },
+    { id: 8, name: 'Cùcù re Q`uan', position: 'Defender', imgUrl: 'squad-8-cucu.png' },
     { id: 9, name: 'Øduongaard', position: 'Midfielder', imgUrl: 'squad-1.png' },
 
     { id: 10, name: "Mes'Son", position: 'Defender', imgUrl: 'squad-1.png' },
