@@ -1,0 +1,58 @@
+<div class="main w-full min-h-screen p-8">
+  <div class="latest-news bg-amber-10 flex gap-10" *ngIf="latestNews">
+    <div class="left-side w-150 h-60 flex-none p-1 ">
+      <a href="/en/tin-tuc/CLB-CAHN-huong-toi-tran-ban-ket-luot-ve-Shopee-Cup.556">
+        <img [src]="latestNews.imgUrl" alt="img lazy"
+              class="object-cover w-full h-85 rounded-xl hover:scale-101 transition-transform duration-1000"
+        >
+      </a>
+    </div>
+
+    <div class="right-side bg py-14 px-10 flex-1">
+      <div class="flex flex-col gap-4">
+        <h3 class="uppercase font-bold text-lg tracking-tight">{{ latestNews.title }}</h3>
+        <p class="text-gray-700 leading-snug">{{ latestNews.subtitle }}</p>
+        <div class="footer flex items-center mt-3 text-lg tracking-tight text-gray-500">
+          <span class="text-red-500 font-bold">TRANSFER</span>
+          <span class="px-2 text-gray-400 text-xl">|</span>
+          <span>{{ latestNews.dateCreated | dateFormat}}</span>
+          <span class="share-button ml-auto">
+            <a href="/">
+              <svg class="fill-current p-1 text-cyan-800  w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M15.75 4.5a3 3 0 1 1 .825 2.066l-8.421 4.679a3.002 3.002 0 0 1 0 1.51l8.421 4.679a3 3 0 1 1-.729 1.31l-8.421-4.678a3 3 0 1 1 0-4.132l8.421-4.679a3 3 0 0 1-.096-.755Z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="other-news mt-10 bg-amber-10 grid grid-cols-3 gap-5">
+    <div class="flex flex-col gap-2 pb-2 shadow-x" *ngFor="let news of otherNews">
+      <div class="row-1 w-full h-60 overflow-hidde">
+        <a href="/en/tin-tuc/CLB-CAHN-huong-toi-tran-ban-ket-luot-ve-Shopee-Cup.556">
+          <img [src]="news.imgUrl" alt="img lazy"
+               class="object-cover w-full h-55 rounded-xl hover:scale-105 transition-transform duration-1000 "
+          >
+        </a>
+      </div>
+      <div class="row-2">
+        <h3 class="uppercase font-bold text-lg tracking-tight">{{ news.title }}</h3>
+      </div>
+      <div class="row-3 flex items-center mt-3 text-lg tracking-tight text-gray-500">
+        <span class="text-red-500 font-bold uppercase">{{ news.type }}</span>
+        <span class="px-2 text-gray-400 text-xl">|</span>
+        <span>{{ news.dateCreated | dateFormat}}</span>
+        <span class="share-button ml-auto">
+            <a href="/">
+              <svg class="fill-current p-2 text-cyan-800  w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M15.75 4.5a3 3 0 1 1 .825 2.066l-8.421 4.679a3.002 3.002 0 0 1 0 1.51l8.421 4.679a3 3 0 1 1-.729 1.31l-8.421-4.678a3 3 0 1 1 0-4.132l8.421-4.679a3 3 0 0 1-.096-.755Z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </span>
+      </div>
+    </div>
+  </div>
+</div>

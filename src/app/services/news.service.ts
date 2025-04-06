@@ -8,14 +8,14 @@ export class NewsService {
   constructor() { }
 
   protected newsList: News[] = [
-    {
-      id: 1,
-      title: "",
-      subtitle: "",
-      content: "",
-      type: "",
-      dateCreated: new Date(),
-    },
+    // {
+    //   id: 1,
+    //   title: "A",
+    //   subtitle: "TEST",
+    //   content: "",
+    //   type: "",
+    //   dateCreated: new Date('2025-02-05'),
+    // },
     {
       id: 2,
       title: "CLB Vins Q12 \"Giang Tay\" với Paul Pogba Sau Scandal Cấm Thi Đấu",
@@ -28,7 +28,8 @@ export class NewsService {
         "\n" +
         "Trong khi tương lai của Pogba vẫn còn mập mờ, câu chuyện này chắc chắn sẽ là đề tài nóng bỏng trong làng bóng đá quốc tế, nhất là khi CLB Vins Q12 quyết định mạo hiểm đầu tư vào một tài năng lớn nhưng cũng đầy rủi ro.",
       type: "others",
-      dateCreated: new Date(),
+      dateCreated: new Date('2025-04-01T06:06:00'),
+      imgUrl: 'news-2-update.png'
     },
     {
       id: 3,
@@ -42,8 +43,9 @@ export class NewsService {
         "\n" +
         "Bước vào giai đoạn trưởng thành, Ødegaard vẫn còn nhiều cơ hội để viết lại câu chuyện sự nghiệp của mình. Nhưng có lẽ, những áp lực mà anh phải đối mặt trong suốt hành trình của mình là điều không dễ dàng để vượt qua. Liệu Ødegaard có thể chứng minh được giá trị của mình và trở thành một ngôi sao lớn như người ta từng kỳ vọng?\n" +
         "\n",
-      type: "",
-      dateCreated: new Date(),
+      type: "players",
+      dateCreated: new Date('2025-03-22T06:09:00'),
+      imgUrl: 'news-1.jpg'
     },
     {
       id: 4,
@@ -56,16 +58,43 @@ export class NewsService {
         "Với sự hỗ trợ từ tập thể mạnh mẽ, Mes'Son đã có sự chuyển mình đáng kể, không chỉ trong lối chơi mà còn trong cách nhìn nhận về vai trò của mình trên sân cỏ. Từng bước, anh đã thể hiện sự trưởng thành, không còn chỉ là một cầu thủ đi bóng \"lố\" mà là một chiến binh thực sự, biết khi nào nên giữ bóng và khi nào phải chuyền cho đồng đội.\n" +
         "\n" +
         "Nhìn lại, sự nghiệp của Mes'Son tại Vins Q12 chính là minh chứng cho sức mạnh của sự kết hợp giữa tài năng cá nhân và sự đoàn kết trong đội bóng. Anh là hình mẫu điển hình của việc một cầu thủ có thể trưởng thành và tỏa sáng khi được hỗ trợ đúng cách.",
-      type: "",
-      dateCreated: new Date(),
+      type: "players",
+      dateCreated: new Date('2025-03-19T06:50:00'),
+      imgUrl: 'news-5.jpg'
     },
     {
       id: 5,
-      title: "",
-      subtitle: "",
-      content: "",
-      type: "",
-      dateCreated: new Date(),
+      title: "Cùcù Re Q`uan: \"Từ Hư Vô\" Lên Đỉnh, Lấy Ronaldo Làm Hình Tượng",
+      subtitle: "Cùcù Re Quan, đội trưởng của Vins Q12, là minh chứng cho sức mạnh vượt qua mọi khó khăn. Với hình tượng CR7, anh đã không ngừng nỗ lực để trở thành một người lãnh đạo mạnh mẽ và truyền cảm hứng cho đồng đội, từ một cầu thủ vô danh đến ngôi sao sáng giá trong làng bóng đá.",
+      content: "Cùcù Re Q`uan, đội trưởng tài ba của Vins Q12, là một trong những ví dụ điển hình cho tinh thần không bao giờ từ bỏ và sự quyết tâm vươn lên từ những khó khăn. Trước khi gia nhập đội bóng, anh chỉ là một cầu thủ vô danh với những thất bại nối tiếp. Tuy nhiên, nhờ vào sự nỗ lực không ngừng nghỉ và học hỏi từ những người đi trước, đặc biệt là hình tượng Cristiano Ronaldo, anh đã vượt qua mọi thử thách để khẳng định bản thân mình.\n" +
+        "\n" +
+        "“Ronaldo luôn là hình mẫu của tôi, không chỉ vì tài năng mà còn vì tinh thần chiến đấu mạnh mẽ. Anh ấy đã chứng minh rằng không có gì là không thể nếu chúng ta không từ bỏ,” Cùcù Re Q`uan chia sẻ. Chính từ nguồn cảm hứng đó, anh đã xây dựng lối chơi riêng biệt của mình, không chỉ mạnh mẽ trong các pha tranh chấp mà còn luôn là nguồn động lực lớn cho cả đội.\n" +
+        "\n" +
+        "Trong những năm tháng khoác áo Vins Q12, Cùcù Re Quan đã dần khẳng định mình là một trong những đội trưởng xuất sắc. Anh biết cách dẫn dắt đồng đội không chỉ bằng tài năng mà còn bằng sức mạnh tinh thần, giúp các cầu thủ trẻ học hỏi và phát triển trong môi trường tập thể. Mỗi lần đội bóng gặp khó khăn, Cùcù Re Quan lại là người gương mẫu, đứng lên dẫn dắt và chiến đấu hết mình.\n" +
+        "\n" +
+        "Sự phát triển vượt bậc của anh cũng chính là minh chứng cho việc không có khó khăn nào là không thể vượt qua nếu ta có quyết tâm. Không chỉ là một cầu thủ xuất sắc, Cùcù Re Q`uan còn là biểu tượng cho sự kiên trì, đam mê và lòng kiên cường – những phẩm chất mà mỗi người trong đội bóng Vins Q12 đều noi theo.\n" +
+        "\n" +
+        "Với những đóng góp không mệt mỏi, Cùcù Re Q`uan đã và đang là cầu thủ mà bất kỳ ai cũng mong muốn có thể theo kịp, trở thành một phần không thể thiếu trong chiến lược của Vins Q12 và là hình mẫu lý tưởng cho các cầu thủ trẻ.",
+      type: "players",
+      dateCreated: new Date('2025-03-07T09:53:00'),
+      imgUrl: 'news-4-ver2.jpg'
+    },
+    {
+      id: 6,
+      title: "Lëv YaBao: Kẻ \"Về Nhì Vĩ Đại\" Tại Giải đấu Cấp Tỉnh (TPHCM)",
+      subtitle: "Lëv YaBao, chàng thủ môn từng 2 lần về nhì đầy ấn tượng tại giải cấp tỉnh, đã trở thành trụ cột vững chắc của CLB Vins Q12, không chỉ với khả năng phản xạ xuất sắc mà còn với tinh thần chiến đấu không biết mệt mỏi, luôn là điểm tựa vững chắc cho cả đội.",
+      content: "Lëv YaBao, thủ môn nổi bật của CLB Vins Q12, là một trong những câu chuyện thành công đầy cảm hứng cho bất kỳ ai theo đuổi đam mê thể thao. Trước khi gia nhập Vins Q12, YaBao đã để lại dấu ấn tại giải đấu cấp tỉnh TP.HCM với hai lần về nhì đầy ấn tượng. Mặc dù chưa giành được chức vô địch, nhưng những màn trình diễn xuất sắc của anh trong khung thành đã khiến không ít người phải trầm trồ. Khả năng phản xạ nhanh nhạy, cùng sự bình tĩnh trong những tình huống căng thẳng, đã khiến YaBao được đánh giá là một trong những thủ môn xuất sắc nhất ở thời điểm đó.\n" +
+        "\n" +
+        "“Tôi chưa bao giờ nghĩ đến việc là số một trong tất cả các giải đấu, nhưng mỗi lần tôi ra sân, tôi đều mong muốn là số một trong lòng người hâm mộ và trong đội bóng,” YaBao chia sẻ. Chính với tinh thần không bao giờ bỏ cuộc và khát khao cải thiện bản thân, anh đã không ngừng nỗ lực và chứng minh rằng mình xứng đáng là người bảo vệ khung thành của Vins Q12.\n" +
+        "\n" +
+        "Sau khi gia nhập Vins Q12, YaBao đã nhanh chóng khẳng định được giá trị của mình. Với tài năng thiên bẩm và sự kiên nhẫn không biết mệt mỏi, anh không chỉ là một thủ môn tài năng mà còn là người đứng đầu trong việc truyền cảm hứng cho đồng đội. Tại CLB, YaBao là tấm gương về sự chuyên nghiệp, luôn thể hiện sự chuẩn mực trong tập luyện và thi đấu. Anh đã trở thành trụ cột vững chắc của đội bóng, là người mà các đồng đội có thể tin tưởng tuyệt đối trong những phút giây quyết định của trận đấu.\n" +
+        "\n" +
+        "Một trong những điểm mạnh của YaBao không chỉ là khả năng cứu thua mà còn là sự lãnh đạo trong khung thành. Anh luôn biết cách tổ chức hàng phòng ngự, chỉ đạo đồng đội và giữ cho tinh thần đội bóng luôn vững vàng trong mọi tình huống khó khăn. Dưới sự chỉ huy của YaBao, Vins Q12 đã trở thành một đội bóng khó bị đánh bại.\n" +
+        "\n" +
+        "Với những nỗ lực không ngừng nghỉ, Lëv YaBao đã chứng minh rằng không có gì là không thể, và vị trí thứ hai trong những giải đấu trước đây chỉ là bước đệm để anh vươn lên mạnh mẽ hơn. Anh chính là minh chứng cho việc một cầu thủ có thể trưởng thành và đạt được những thành công lớn khi biết kết hợp giữa tài năng, kỷ luật và tinh thần chiến đấu mãnh liệt.",
+      type: "players",
+      dateCreated: new Date('2025-03-04T09:53:00Z'),
+      imgUrl: 'news-3.jpg'
     },
   ]
 
@@ -75,22 +104,22 @@ export class NewsService {
 
   listNewsByMatch() {
     return this.newsList.filter(news =>
-      news.title === 'matches'
+      news.type === 'matches'
     )
   }
   listNewsByClub() {
     return this.newsList.filter(news =>
-      news.title === 'club'
+      news.type === 'club'
     )
   }
   listNewsByInterviews() {
     return this.newsList.filter(news =>
-      news.title === 'interviews'
+      news.type === 'interviews'
     )
   }
   listNewsByOthers() {
     return this.newsList.filter(news =>
-      news.title === 'others'
+      news.type === 'others'
     )
   }
 }

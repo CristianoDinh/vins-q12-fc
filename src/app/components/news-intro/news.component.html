@@ -17,7 +17,7 @@
 
     <!-- News List (Horizontal Scroll) -->
     <div class="mt-6 overflow-x-auto scrollbar-hide">
-      <div class="flex gap-6 justify-start">
+      <div class="flex gap-6 justify-start" *ngIf="newsList">
 
         <!-- News 1 -->
         <div class="w-[300px] flex-shrink-0 bg-white shadow-lg rounded-lg overflow-hidden">
@@ -26,11 +26,11 @@
             hover:-scale-x-180 transition-transform duration-1000">
           </a>
           <div class="p-4">
-            <h3 class="text-lg font-bold text-gray-900 uppercase">CLB Vins Q12 "Giang Tay" với Paul Pogba Sau Scandal Cấm Thi Đấu</h3>
-            <p class="text-gray-700 text-sm mt-2"> Sau lùm xùm cấm thi đấu từ FIFA, Paul Pogba đang đối mặt với tương lai bất định. Tuy nhiên, CLB Vins Q12 đã ngỏ lời chiêu...</p>
+            <h3 class="text-lg font-bold text-gray-900 uppercase">{{ newsList[0].title }}</h3>
+            <p class="text-gray-700 text-sm mt-2 line-clamp-3"> {{ newsList[0].subtitle }}</p>
             <div class="flex justify-between items-center mt-3 text-xs text-gray-500">
               <span class="text-red-500 font-bold">TRANSFER</span>
-              <span>06:06, 01/04/2025</span>
+              <span>{{ newsList[0].dateCreated | dateFormat }}</span>
             </div>
           </div>
         </div>
@@ -42,11 +42,11 @@
               hover:scale-x-180 transition-transform duration-1000">
           </a>
           <div class="p-4">
-            <h3 class="text-lg font-bold text-gray-900 uppercase">Martin Øduongaard: Tài Năng Bị Lãng Quên Vì Áp Lực Bóng Đá</h3>
-            <p class="text-gray-700 text-sm mt-2"> Martin Øduongaard từng được xem là một trong những tài năng sáng giá của bóng đá thế giới, với kỹ thuật và khả năng điều...</p>
+            <h3 class="text-lg font-bold text-gray-900 uppercase">{{ newsList[1].title }}</h3>
+            <p class="text-gray-700 text-sm mt-2 line-clamp-3"> {{ newsList[1].subtitle }}</p>
             <div class="flex justify-between items-center mt-3 text-xs text-gray-500">
               <span class="text-red-500 font-bold">PLAYERS</span>
-              <span>09:69, 21/03/2025</span>
+              <span>{{ newsList[1].dateCreated | dateFormat }}</span>
             </div>
           </div>
         </div>
@@ -58,11 +58,11 @@
                 transform transition-transform hover:scale-180 duration-1000">
           </a>
           <div class="p-4">
-            <h3 class="text-lg font-bold text-gray-900 uppercase"> Mes'Son: "Không có tập thể này, sẽ không có tôi ngày hôm nay !"</h3>
-            <p class="text-gray-700 text-sm mt-2"> Mes'Son - sở hữu khả năng đi bóng thiên phú nhưng lại lạm dụng ở nhiều thời điểm không hợp lý. Gia nhập Vins Q12, anh đã ... </p>
+            <h3 class="text-lg font-bold text-gray-900 uppercase"> {{ newsList[2].title }}</h3>
+            <p class="text-gray-700 text-sm mt-2 line-clamp-3"> {{ newsList[2].subtitle }}</p>
             <div class="flex justify-between items-center mt-3 text-xs text-gray-500">
               <span class="text-red-500 font-bold">PLAYERS</span>
-              <span>06:50, 19/03/2025</span>
+              <span>{{ newsList[2].dateCreated | dateFormat }}</span>
             </div>
           </div>
         </div>
@@ -74,11 +74,11 @@
                   hover:scale-x-240 hover:-translate-x-50 duration-1000">
           </a>
           <div class="p-4">
-            <h3 class="text-lg font-bold text-gray-900 uppercase"> Cùcù Re Q`uan: "Từ Hư Vô" Lên Đỉnh, Lấy Ronaldo Làm Hình Tượng</h3>
-            <p class="text-gray-700 text-sm mt-2"> Cùcù Re Q`uan, đội trưởng của Vins Q12, là minh chứng cho sức mạnh vượt qua mọi khó khăn. Với hình tượng CR7, anh...</p>
+            <h3 class="text-lg font-bold text-gray-900 uppercase"> {{ newsList[3].title }}</h3>
+            <p class="text-gray-700 text-sm mt-2 line-clamp-3"> {{ newsList[3].subtitle }}</p>
             <div class="flex justify-between items-center mt-3 text-xs text-gray-500">
               <span class="text-red-500 font-bold">PLAYERS</span>
-              <span>09:53, 07/03/2025</span>
+              <span>{{ newsList[3].dateCreated | dateFormat }}</span>
             </div>
           </div>
         </div>
@@ -90,11 +90,11 @@
                 hover:scale-110 transition-transform duration-300">
           </a>
           <div class="p-4">
-            <h3 class="text-lg font-bold text-gray-900 uppercase"> Lëv YaBao: Kẻ "Về Nhì Vĩ Đại" Tại Giải đấu Cấp Tỉnh (TPHCM)</h3>
-            <p class="text-gray-700 text-sm mt-2"> Lëv YaBao, chàng thủ môn từng 2 lần về nhì đầy ấn tượng tại giải cấp tỉnh, đã trở thành trụ cột vững chắc của CLB Vins Q12,..</p>
+            <h3 class="text-lg font-bold text-gray-900 uppercase"> {{ newsList[4].title }} </h3>
+            <p class="text-gray-700 text-sm mt-2 line-clamp-3"> {{ newsList[4].subtitle }}</p>
             <div class="flex justify-between items-center mt-3 text-xs text-gray-500">
               <span class="text-red-500 font-bold">PLAYERS</span>
-              <span>15:56, 04/03/2025</span>
+              <span>{{ newsList[4].dateCreated | dateFormat }}</span>
             </div>
           </div>
         </div>
