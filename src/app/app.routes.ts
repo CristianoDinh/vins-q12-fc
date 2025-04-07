@@ -69,7 +69,7 @@ export const routes: Routes = [
         title: 'Contact Us'
       },
       {
-        path: 'policy',
+        path: 'privacy-policy',
         component: PrivacyComponent,
         title: 'Privacy Policy'
       },
