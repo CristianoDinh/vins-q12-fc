@@ -2,9 +2,7 @@ import { Routes } from '@angular/router';
 import {HomeComponent} from './components/home/home.component';
 import {TestComponent} from './components/test/test.component';
 import {TeamComponent} from './components/team/team.component';
-import {NewsAllComponent} from './components/news/news-all/news-all.component';
-import {NewsDetailComponent} from './components/news/news-detail.component';
-import {StoreComponent} from './components/store/store.component';
+
 import {ComingSoonComponent} from './components/coming-soon/coming-soon.component';
 import {ChatGPTComponent} from './components/chat-gpt/chat-gpt.component';
 import {ContactUsComponent} from './components/footer/contact-us/contact-us.component';
@@ -12,6 +10,8 @@ import {AccessibilityComponent} from './components/footer/accessibility/accessib
 import {PrivacyComponent} from './components/footer/privacy/privacy.component';
 import {TermOfUseComponent} from './components/footer/term-of-use/term-of-use.component';
 import {CookiesComponent} from './components/footer/cookies/cookies.component';
+import {NewsCategoryComponent} from './components/news/news-category.component';
+import {NewsDetailComponent} from './components/news/news-detail/news-detail.component';
 
 export const routes: Routes = [
   {
@@ -40,13 +40,14 @@ export const routes: Routes = [
       },
 
       { path: 'news',
-        component: NewsDetailComponent,
+        component: NewsCategoryComponent,
         title: 'News | Vins-Q12 FC'
       },
       { path: 'news',
         redirectTo: '/news?scope=0',
         pathMatch: 'full'
       },
+      { path: 'news/:id', component: NewsDetailComponent },
       {
         path: 'store',
         component: ComingSoonComponent,

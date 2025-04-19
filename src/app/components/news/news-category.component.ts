@@ -4,7 +4,7 @@ import {NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault} from '@angular/common';
 import {NewsAllComponent} from './news-all/news-all.component';
 
 @Component({
-  selector: 'app-news-detail',
+  selector: 'app-news-category',
   imports: [
     NgSwitch,
     NgSwitchCase,
@@ -12,10 +12,10 @@ import {NewsAllComponent} from './news-all/news-all.component';
     NgIf,
     NewsAllComponent
   ],
-  templateUrl: './news-detail.component.html',
-  styleUrl: './news-detail.component.css'
+  templateUrl: './news-category.component.html',
+  styleUrl: './news-category.component.css'
 })
-export class NewsDetailComponent implements OnInit {
+export class NewsCategoryComponent implements OnInit {
   scope: string | null = '0';
   constructor(private route: ActivatedRoute, private router: Router ) { }
 

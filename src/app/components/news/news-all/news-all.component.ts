@@ -3,19 +3,21 @@ import {News} from '../../../interface/news';
 import {NewsService} from '../../../services/news.service';
 import {NgForOf, NgIf} from '@angular/common';
 import {DateFormatPipe} from '../../../pipes/date-format.pipe';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-news-all',
   imports: [
     NgIf,
     DateFormatPipe,
-    NgForOf
+    NgForOf,
+    RouterLink
   ],
   templateUrl: './news-all.component.html',
   styleUrl: './news-all.component.css'
 })
 export class NewsAllComponent implements OnInit {
-  @Input() scope: string = '0'; // Nhận scope từ `news-detail`
+  @Input() scope: string = '0'; // Nhận scope từ `news-category`
   newsList: News[] = [];
   latestNews ?: News;
   otherNews: News[] = [];
