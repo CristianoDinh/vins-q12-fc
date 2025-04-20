@@ -1,1 +1,20 @@
-<p>news-detail works!</p>
+<div *ngIf="news" class="px-10 pb-10">
+  <div class="pt-3 mb-10 ">
+    <a href="/" class="hover:text-[#1722BD] hover:font-bold">Home</a> >
+    <a href="/en/news" class="hover:text-[#1722BD] hover:font-bold">News</a> > Detail
+  </div>
+  <h1 class="uppercase text-[32px] font-bold tracking-tight scale-y-120" >{{ news.title }}</h1>
+  <p class="text-gray-600 my-5">
+    <span class="text-red-500 font-bold uppercase">{{ news.type }}</span>
+    <span class="px-2 text-gray-400 text-xl">|</span>
+    <span>{{ news.dateCreated | date: 'HH:mm, dd/MM/yyyy' }}</span>
+  </p>
+  <p class="max-w-280 text-lg text-[rgb(32,32,120)] font-bold mb-8">{{ news.subtitle }}</p>
+  <div class="prose max-w-280 text-justify" >
+    <p class="tracking-wide leading-8 text-lg" [innerHTML]="news.content"></p>
+  </div>
+</div>
+
+<div *ngIf="!news">
+  <p class="text-red-500">Bài viết không tồn tại hoặc đã bị xoá.</p>
+</div>

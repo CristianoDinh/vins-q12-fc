@@ -122,4 +122,9 @@ export class NewsService {
       news.type === 'others'
     )
   }
+
+  getNewsById(id: number): News | undefined {
+    return this.newsList.find(n => n.id === id);
+  }
+
 }

@@ -47,7 +47,7 @@ export const routes: Routes = [
         redirectTo: '/news?scope=0',
         pathMatch: 'full'
       },
-      { path: 'news/:id', component: NewsDetailComponent },
+      { path: 'news/:id', component: NewsDetailComponent, title: 'News Detail' },
       {
         path: 'store',
         component: ComingSoonComponent,
